@@ -1,0 +1,331 @@
+@font-face {
+  font-family: Tajawal;
+  src: url(../Fonts/Tajawal-Regular.ttf);
+}
+@font-face {
+  font-family: AbraamCoptic;
+  src: url(../Fonts/ABRAAM_0.ttf);
+}
+@font-face {
+  font-family: Hina;
+  src: url(../Fonts/HinaMincho-Regular.ttf);
+}
+.coptic {
+  font-family: AbraamCoptic;
+  direction: ltr;
+  text-align: start;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
+}
+
+body {
+  direction: ltr;
+  font-family: Tajawal;
+  background-color: floralwhite;
+  font-size: 1.3rem;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.navbar {
+  box-shadow: 1px 2px 5px rgb(133, 133, 133);
+  direction: ltr;
+  display: none;
+}
+
+.logo-items {
+  margin-left: 6%;
+}
+
+.logo1 {
+  
+  font-family: "Style Script", cursive;
+  font-size: 2rem;
+}
+
+.logo {
+  width: 65px;
+  height: 50%;
+}
+
+.navbar-nav {
+  direction: ltr;
+ margin-left: 25%;
+  font-size: 17px;
+}
+
+.dropdown {
+  direction: ltr;
+}
+
+.dropdown-item:hover {
+  text-decoration: none;
+  background-color: darkmagenta;
+  color: white;
+}
+
+.nav-col:hover {
+  background-color: darkmagenta;
+  border-radius: 3%;
+}
+
+.btn-outline:hover {
+  background-color: darkmagenta;
+}
+
+.home-bg {
+  background-size: 100%;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-image: url(../img/main.jpg);
+  padding: 1px;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  background: #f1f1f1;
+  margin-bottom: 100px;
+  border: 0;
+}
+
+.card > div {
+  padding: 2rem;
+}
+
+@media (max-width: 700px) {
+  .card {
+    display: block;
+  }
+}
+
+/* النشئة*/
+.nash {
+  direction: rtl;
+  
+}
+.nash-img {
+  height: 90%;
+  width: 80%;
+  margin-top: 6%;
+}
+
+.nash-txt {
+  text-align: left;
+  margin-top: 15%;
+}
+
+.nash-p {
+  
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nash-h {
+  font-weight: bolder;
+}
+
+/* الرهبنة */
+
+.rah-txt {
+  text-align: start;
+  margin-top: 15%;
+}
+
+.rah-p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.rah-h {
+  font-weight: bolder;
+}
+
+.rah-img {
+  margin-top: 15%;
+}
+
+/*مقتطفات من حياتهم */
+.mok{
+  direction: rtl;
+}
+.mok-img {
+  height: 80%;
+  width: 90%;
+  margin-top: 20%;
+  margin-right: auto;
+}
+
+.mok-txt {
+  text-align: left;
+  margin-top: 12%;
+}
+
+.mok-p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.mok-h {
+  font-weight: bolder;
+}
+
+.txt-st {
+  padding: 1px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* تابع المقتطفات */
+
+.mok1-txt {
+  text-align: start;
+  margin-top: 15%;
+}
+
+.mok1-p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.mok1-h {
+  font-weight: bolder;
+}
+
+
+
+/* نياحتهما  */
+.nah{
+  direction: rtl;
+}
+
+.nah-img {
+  margin-top: 5%;
+}
+
+.nah-txt {
+  text-align: left;
+  margin-top: 13%;
+}
+
+.nah-p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nah-h {
+  font-weight: bolder;
+}
+
+.nah,
+.mok,
+.nash {
+  background: floralwhite;
+}
+
+.card:nth-child(even) img {
+  direction: ltr;
+}
+
+.nav-txt {
+  color: rgb(194, 197, 197);
+  font-family: "Style Script", cursive;
+}
+
+
+/* .img-ho:hover {
+  transform: scale(1.2, 1.2);
+  transition-timing-function: ease-in-out;
+  border-radius: 50%;
+  transition: 0.5s all;
+}
+.img-ho {
+  transition: width 0.5s, height 0.5s, transform 0.5s;
+  overflow: hidden;
+}  242f3f */
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
